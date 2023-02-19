@@ -43,7 +43,7 @@ data ={
 salutations = [
               "hello",
               "hi",   
-              "yoo", 
+              "i need help", 
               "hey",    
               "good morning",    
               "good evening", 
@@ -56,7 +56,7 @@ salutation_feedback = [
   "Good morning/afternoon/evening! What can I help you with?",    
   "Greetings! Is there something specific you would like to know?"]
 
-salutations1 = ["bye", "goodbye", "good bye","see you later"]
+salutations1 = ["bye", "goodbye", "good bye","see you later","thanks"]
 
 salutation_feedback1 = [
   "See you later, thanks for visiting", 
@@ -65,6 +65,7 @@ salutation_feedback1 = [
 
 
 
+malaria_commands = ['allocation', 'distribution', 'total', 'predict', 'data']
 
 unknown_query_responses = [    "I'm sorry, I'm a chatbot, not a miracle worker.",
                   "I'm sorry, I'm a machine, not a mind reader.",    
@@ -83,5 +84,4 @@ unknown_query_responses = [    "I'm sorry, I'm a chatbot, not a miracle worker."
                  "I'm sorry, but I don't have an answer for that. Perhaps try asking someone else?",    
                  "My apologies, I couldn't find any information on that topic. Could you try asking a different way?"
                   ]
-
 

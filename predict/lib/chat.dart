@@ -24,7 +24,7 @@ class _ChatPageState extends State<ChatPage> {
   void initState() {
     super.initState();
     chatController.socket = IO.io(
-        'http://51.255.62.21:3000/',
+        'http://localhost:3000/',
         IO.OptionBuilder().setTransports(['websocket']).setQuery(
             {'username': "armsy"}).build());
     chatController.socketConnection();
@@ -41,7 +41,7 @@ class _ChatPageState extends State<ChatPage> {
         backgroundColor: Colors.black,
         title: Column(
           children: [
-            const Text("Malaria Commodity Explainer",
+            const Text("Malaria Commodity Dispersion Explainer",
                 style: TextStyle(color: Colors.white)),
             Align(
               alignment: Alignment.center,
@@ -100,7 +100,7 @@ class _ChatPageState extends State<ChatPage> {
                                         animatedTexts: [
                                           // "Hi! I'm a chatbot for the child protection management system. I can help you report and track cases, answer basic questions and guide you through the process. Let's work together to keep children safe!"
                                           TyperAnimatedText(
-                                              "Hi! I'm a chatbot, still in active development.I can give you a clear picture of trends related to consumption of malaria commodities based on seasonality and other confounding factors.")
+                                              "Hi! I'm a chatbot, still in active development.I can give you a clear picture of trends related to consumption of malaria commodities and make limitied prediction.")
                                         ],
                                       ),
                                     ),
@@ -294,8 +294,7 @@ class _ChatPageState extends State<ChatPage> {
                             ),
                             GetBuilder<ChatController>(builder: (_) {
                               return Text(
-                                chatController.status ??
-                                    "Linking with cpmis...",
+                                chatController.status ?? "Linking with khis...",
                                 style: const TextStyle(
                                     fontSize: 10, color: Colors.white),
                               );
@@ -325,7 +324,7 @@ class _ChatPageState extends State<ChatPage> {
                                                 fontSize: 14,
                                                 color: Colors.grey.shade700),
                                             hintText:
-                                                "cpims:)- I'm a limitied edition.",
+                                                "KHIS analysis explainer.",
                                             border: InputBorder.none,
                                             filled: true,
                                             fillColor: Colors.grey.shade100,

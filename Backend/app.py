@@ -2,7 +2,8 @@ import random
 from flask import Flask,request
 from flask_socketio import SocketIO,emit,send
 from model import load_dataset, process
-from dataset import salutations, salutation_feedback,salutations1, salutation_feedback1
+from dataset import salutations, salutation_feedback,salutations1, salutation_feedback1,malaria_commands
+from decode import data,predict
 
 
 app = Flask(__name__)
@@ -47,6 +48,7 @@ def save_session(payload):
 def message(payload):
     #take in user message, and username
     user_message = payload['message']
+    message = user_message.lower().strip()
     user_name  = payload['username']
     if user_message.lower().strip() in salutations:
         random_salutation = random.choice(salutation_feedback)
@@ -55,6 +57,20 @@ def message(payload):
     elif user_message.lower().strip() in salutations1:
         random_salutation = random.choice(salutation_feedback1)
         emit("message", {"message": random_salutation}, room=users[user_name])
+        
+    elif message[:12] in malaria_commands:
+        print(True)
+    elif message[:10] in malaria_commands:
+        print(True)
+    elif message[:5] in malaria_commands:
+        print(True)
+    elif message[:7] in malaria_commands:
+        feedback = predict(message)
+        emit("message", {"message": feedback}, room=users[user_name])
+
+    elif message[:4] in malaria_commands:
+        feedback = data(message)
+        emit("message", {"message": feedback}, room=users[user_name])
 
     else:
         try:
