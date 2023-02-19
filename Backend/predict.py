@@ -18,7 +18,8 @@ commodities_data = [4898535.0, 4896284.0, 4162071.5, 5930233.0, 6156400.0]
 years = [2018, 2019, 2020, 2021, 2022]
 
 def predict_for_years(n):
-    if n < 3:
+    print(n)
+    try:
         # Reshape the years data to fit the required input format for the LinearRegression model
         X = np.array(years).reshape(-1, 1)
 
@@ -30,11 +31,13 @@ def predict_for_years(n):
         future_years = np.array([2023, 2024, 2025]).reshape(-1, 1)
         predictions = model.predict(future_years)
 
+        predicted = []
         # Print the predicted trend in the commodity data
-        for i in range(n):
-            return f"Predicted commodity value for {future_years[i][0]}: {predictions[i]}"
+        for i in range(int(n)):
+            predicted.append(f"Predicted commodity value for {future_years[i][0]}: {predictions[i]}")
+        return predicted
 
-    else:
+    except Exception:
 
         return "I can not predict for more than 3 years, I'm currently using linear regression model.A lot of inaccuracies will be countered"
 

@@ -1,5 +1,6 @@
 data ={
     "questions": [
+     
       "What is the Internet?",
       "What is technology?",
       "What is the history of the Internet?",
@@ -16,8 +17,10 @@ data ={
       "C++ programming language",
       "more on deep learning",
       "Flutter framework",
+    
     ],
     "answers": [
+      
       "The Internet is a global network of computers and servers that are connected to one another, allowing users to share and access information and resources. It is a decentralized system that enables communication and data exchange between computers and other devices across the world.",
       "Technology refers to the tools, methods, and systems that are developed and used to solve problems and improve the quality of life. It encompasses a wide range of fields and disciplines, including electronics, computing, communication, engineering, and science.",
       "The history of the Internet dates back to the 1960s, when the Department of Defense in the United States developed a network of computers known as ARPANET. Over time, this network evolved into the global system of interconnected computer networks that we know today as the Internet.",
@@ -34,7 +37,7 @@ data ={
       "C++ is a general-purpose, high-level programming language that provides low-level control over system resources while also supporting object-oriented programming. It's commonly used for system programming, game development, and embedded systems.",
       "Deep learning is a subfield of machine learning that uses neural networks with multiple layers to learn from and make predictions or decisions based on data. It's used for tasks such as image and speech recognition, NLP, and autonomous vehicles.",
       "Flutter is a free and open-source mobile app development framework created by Google. It uses the Dart programming language and provides a modern, reactive programming model for building high-performance and cross-platform apps.",
-     
+
 
 
     ]
@@ -70,11 +73,7 @@ malaria_commands = ['allocation', 'distribution', 'total', 'predict', 'data']
 unknown_query_responses = [    "I'm sorry, I'm a chatbot, not a miracle worker.",
                   "I'm sorry, I'm a machine, not a mind reader.",    
                   "I'm sorry, but I only have the information you give me.",    
-                  "I'm sorry, I'm not a genius, just a highly advanced robot.",    
-                  "I'm sorry, my database is vast, but not infinite.",    
-                  "I'm sorry, I'm an AI, not a superhero.",    
-                  "I'm sorry, I don't know the answer to that, but I'm sure Google does.",    
-                  "I'm sorry, I'm just a computer program, not a philosopher.",    
+                       
                   "I'm sorry, I don't have all the answers, just most of them.",    
                   "I'm sorry, I'm not a psychic, just a highly educated AI.",
                   "I'm sorry, I don't have the answer to that. Maybe try asking a different source?",    
@@ -83,5 +82,6 @@ unknown_query_responses = [    "I'm sorry, I'm a chatbot, not a miracle worker."
                  "Sorry, I'm not sure what you're asking. Can you please clarify?",    
                  "I'm sorry, but I don't have an answer for that. Perhaps try asking someone else?",    
                  "My apologies, I couldn't find any information on that topic. Could you try asking a different way?"
+                 "please, refer to some of my commands, when it comes to analysis"
                   ]
 

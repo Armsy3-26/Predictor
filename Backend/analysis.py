@@ -203,7 +203,7 @@ def total_items_per_row(period=None):
     except Exception as e:
         return "An error that Wasn't supposed to happen!"
         
-
+#total_items_per_row(201804)
 ###############################################################
 #get total, mean and median for every column (each  year begin from 202201 to 201812)
 #ie summation from jan to dec each year
@@ -293,5 +293,5 @@ def yearly_reports(year=None):
     return yearly_report
     #print(yearly_report)
 
-yearly_reports()
+#yearly_reports()
     
